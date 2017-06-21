@@ -1,26 +1,26 @@
 pipeline {
 
-agent { label 'DEVELOPMENT' }
+agent any
 
 stages {
 
   stage('Build') {
-    step {
+    steps {
     echo "Build step is getting executed...!!!!"
     }
   }
   stage('Test') {
-    step {
+    steps {
     echo "Test step is getting executed...!!!!"
     }
   }
   stage('Nexus Upload') {
-    step {
+    steps {
     echo "Nexus Upload step is getting executed...!!!!"
     }
   }
   stage('Deploy') {
-    step {
+    steps {
     echo "Deploy step is getting executed...!!!!"
     }
   }
