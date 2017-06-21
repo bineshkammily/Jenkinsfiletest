@@ -14,9 +14,9 @@ stages {
     echo "Test step is getting executed...!!!!"
     }
   }
-  stage('Nexus Upload') {
+  stage('Running_Script') {
     steps {
-    echo "Nexus Upload step is getting executed...!!!!"
+    sh("python hello.py")
     }
   }
   stage('Deploy') {
